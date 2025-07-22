@@ -20,6 +20,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: ./Dockerfile
+        context: .
+        file: ./Dockerfile
         push: true
         tags: maynarddomingo/brownbag-07222025:latest
